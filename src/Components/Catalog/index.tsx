@@ -7,7 +7,7 @@ import styles from './index.module.scss'
 export function Catalog() {
     return (
         <section className={styles.catalog}>
-            <div className={styles.head}>
+            <div className={styles['catalog_head']}>
                 <h1>Explore</h1>
                 <p>Buy and sell digital fashion NFT art</p>
             </div>
