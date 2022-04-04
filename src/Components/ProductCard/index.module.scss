@@ -1,0 +1,77 @@
+.card {
+    display: block;
+
+    margin-bottom: 1.5rem;
+
+    box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &-nft {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 40.4rem;
+
+        padding: 1.6rem;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        color: #fff;
+
+        &--odd {
+            background-image: url('../../Shared/Images/odd__card.jpg');
+        }
+
+        &--even {
+            background-image: url('../../Shared/Images/even__card.jpg');
+        }
+
+        &--eachfive {
+            background-image: url('../../Shared/Images/eachfive__card.jpg');
+        }
+
+        &__creator {
+            font-size: 1.2rem;
+            line-height: 2.4rem;
+            font-weight: 700;
+
+            & span {
+                font-weight: 400;
+
+                color: #f3f3f3;
+            }
+        }
+
+        &__name {
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
+    }
+
+    &-selling {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 1.6rem;
+
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+
+        color: #808080;
+
+        & span {
+            font-size: 1.2rem;
+            line-height: 2.4rem;
+
+            color: #808080;
+        }
+    }
+}
