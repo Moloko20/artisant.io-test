@@ -1,0 +1,15 @@
+@import './../Shared/Styles/reset';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@import './../Shared/Styles/typography';
+
+html {
+    font-size: 10px;
+    color: $font;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+    
