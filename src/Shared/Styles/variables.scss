@@ -10,3 +10,8 @@ $font: #2d6a4f;
     line-height: 1.8rem;
 }
     
+@mixin mobile {
+    @media only screen and (max-device-width: 736px) and (min-device-width: 320px) {
+        @content
+    }
+}
