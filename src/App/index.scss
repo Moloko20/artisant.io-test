@@ -6,7 +6,6 @@
 
 html {
     font-size: 10px;
-    color: $font;
 }
 
 body {
@@ -14,9 +13,5 @@ body {
 }
 
 section {
-    padding: 3.2rem;
-
-    @include mobile {
-        padding: 1.5rem;
-    }
+    padding: 1.6rem;
 }
