@@ -1,5 +1,10 @@
 .productlist {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
 
     &-error {
         font-weight: 400;
