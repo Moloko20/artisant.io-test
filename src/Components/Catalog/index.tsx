@@ -2,10 +2,9 @@ import React from 'react'
 
 import { ProductList } from 'Components/ProductList'
 
-import styles from './Catalog.module.scss'
+import styles from './index.module.scss'
 
 export function Catalog() {
-    console.log(styles)
     return (
         <section className={styles.catalog}>
             <div className={styles.head}>
