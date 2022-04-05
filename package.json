@@ -2,7 +2,7 @@
     "name": "artisant.io-test",
     "version": "1.0.0",
     "description": "",
-    "homepage": "https://Moloko20.github.io/artisant.io-test",
+    "homepage": "https://Moloko20.github.io/artisant.io-test/",
     "main": "index.js",
     "scripts": {
         "predeploy": "npm run build",
