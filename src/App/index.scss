@@ -13,10 +13,18 @@ body {
 }
 
 section {
-    max-width: 128rem;
+    max-width: 61rem;
 
     margin-left: auto;
     margin-right: auto;
 
     padding: 1.6rem;
+
+    @include tablet_915 {
+        max-width: 91.5rem;
+    }
+
+    @include desktop {
+        max-width: 128rem;
+    }
 }
