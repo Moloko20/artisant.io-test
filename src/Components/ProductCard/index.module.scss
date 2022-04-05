@@ -1,5 +1,5 @@
 .card {
-    max-width: 30.5rem;
+    width: 100%;
 
     box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.07);
     border-radius: 8px;
@@ -12,8 +12,17 @@
 
         margin-bottom: 1.5rem;
 
+        max-width: 30.5rem;
+
         &:last-child {
             margin-bottom: 0;
+        }
+
+        @include tablet {
+            flex-basis: 25%;
+            
+            max-width: 25%;
+            min-width: 30.5rem;
         }
     }
 
@@ -22,11 +31,12 @@
         flex-direction: column;
         justify-content: space-between;
 
-        height: 40.4rem;
+        min-height: 40.4rem;
 
         padding: 1.6rem;
 
         background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
 
         color: #fff;
