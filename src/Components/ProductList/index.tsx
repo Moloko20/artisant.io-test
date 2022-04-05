@@ -7,7 +7,7 @@ import { getProducts, ProductItem } from 'Services/getProducts'
 
 import styles from './index.module.scss'
 
-function ProductListComponent() {
+function ProductListComponent({ aviable }: { aviable: boolean }) {
     const [poductData, productDataSet] = React.useState<Array<ProductItem>>([])
     const [poductErr, productErrSet] = React.useState<boolean>(false)
 
@@ -30,7 +30,15 @@ function ProductListComponent() {
         return poductErr ? (
             <div className={styles['productlist-error']}>Something's gone wrong :(</div>
         ) : isLoaded ? (
-            poductData.map(product => <ProductCard key={product.product_id} product={product} />)
+            aviable ? (
+                poductData
+                    .filter(product => product.quantity_available > 0)
+                    .map(product => <ProductCard key={product.product_id} product={product} />)
+            ) : (
+                poductData.map(product => (
+                    <ProductCard key={product.product_id} product={product} />
+                ))
+            )
         ) : (
             <Loader />
         )
