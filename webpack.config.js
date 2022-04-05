@@ -52,7 +52,7 @@ module.exports = () => {
         },
         output: {
             path: path.resolve(__dirname, './dist'),
-            publicPath: '/',
+            publicPath: '/dist',
         },
         performance: {
             hints: false,
