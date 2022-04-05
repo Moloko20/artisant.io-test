@@ -1,17 +1,5 @@
-$bg-wrapper: #d8f3dc;
-$bg-table: #b7e4c7;
-$bg-thead: #5eb68d;
-$bg-td--even: #87d8af;
-
-$font: #2d6a4f;
-
-@mixin simple-text {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-}
-    
-@mixin mobile {
-    @media only screen and (max-device-width: 736px) and (min-device-width: 320px) {
+@mixin tablet {
+    @media (min-device-width: 768px) {
         @content
     }
 }
