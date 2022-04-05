@@ -1,6 +1,7 @@
 # artisant.io-test
 
 artisant.io employment test assignment - SPA React App.
+[View project](https://moloko20.github.io/artisant.io-test/)
 
 ## Installation
 
