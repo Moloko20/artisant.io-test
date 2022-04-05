@@ -2,4 +2,16 @@
     @media (min-device-width: 768px) {
         @content
     }
-}
+};
+
+@mixin tablet_915 {
+    @media (min-device-width: 915px) {
+        @content
+    }
+};
+
+@mixin desktop {
+    @media (min-device-width: 1220px) {
+        @content
+    }
+};
