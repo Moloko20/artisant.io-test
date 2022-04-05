@@ -6,6 +6,10 @@
     margin-left: -1.6rem;
     margin-right: -1.6rem;
 
+    @include tablet {
+        flex-direction: row;
+    }
+
     &-error {
         font-weight: 400;
         font-size: 1.8rem;
